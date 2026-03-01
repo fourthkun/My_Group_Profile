@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: url('100909.jpg') no-repeat center center/cover; /* ใส่รูปพื้นหลังกลุ่มตรงนี้ */
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* ทำให้พื้นหลังเข้มขึ้นเพื่อให้ข้อความชัด */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { height: 100px;
+        width: 300px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1 { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+/* การจัดช่องสมาชิก */
+.member-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.member-card {
+    width: 180px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffcc33; /* สีเหลืองทองแบบ Genshin */
+}
+
+.card-bg {
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+
+.member-card span {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.6);
+}
+/* พื้นหลังไล่เฉดสีม่วงเข้มแบบในภาพตัวอย่าง */
+.char-page {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4b1d3f 0%, #a82a62 50%, #4b1d3f 100%);
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    align-items: center;
+}
+
+/* จัดวางข้อมูลด้านซ้าย */
+.content-left {
+    flex: 1;
+    padding-left: 50px;
+    z-index: 10;
+}
+
+.tag-new {
+    background: #ffcc33;
+    color: #000;
+    display: inline-block;
+    padding: 2px 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.name-en {
+    font-size: 5rem;
+    margin: 10px 0;
+    letter-spacing: 5px;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+
+.detail-box {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #ffcc33;
+    max-width: 450px;
+    line-height: 1.8;
+}
+
+.bio {
+    margin-top: 20px;
+    font-style: italic;
+    color: #ddd;
+    max-width: 450px;
+}
+
+.char-nav {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.face {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.face.active, .face:hover {
+    border-color: #ffcc33;
+    transform: scale(1.1);
+}
+
+/* จัดวางรูปภาพด้านขวา */
+.content-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-char-img {
+    height: 100vh; /* ให้รูปสูงเท่าหน้าจอ */
+    object-fit: contain;
+    filter: drop-shadow(0 0 30px rgba(0,0,0,0.6)); /* เพิ่มเงาให้รูปดูมีมิติ */
+}
+
+.btn-back {
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #fff;
+    color: #4b1d3f;
+}
+/* ธีมของรุ้ง (สีม่วง-ชมพู เหมือนรูปตัวอย่าง) */ 
+.theme-rung {
+    background: url('100907.jpg') no-repeat center center/cover;
+}
+.theme-rung .detail-box { border-left-color: #2ecc71; } /* เส้นขอบสีเหลืองทอง */
+
+/* ธีมของซัน (เช่น สีเขียวธาตุลม) */
+.theme-sun {
+    background: url('100907.jpg') no-repeat center center/cover;
+}
+.theme-sun .detail-box { border-left-color: #000000 ; }
+
+/* ธีมของมะนาว (เช่น สีฟ้าธาตุน้ำ) */
+.theme-manao {
+    background: url('100907.jpg') no-repeat center center/cover;
+}
+.theme-manao .detail-box { border-left-color:#aa11af ; }
+
+/* ธีมของโฟร์ท (เช่น สีแดงธาตุไฟ) */
+.theme-fourth {
+    background: url('100907.jpg') no-repeat center center/cover;
+}
+.theme-fourth .detail-box { border-left-color:  #3498db; }
+html {
+    scroll-behavior: smooth;
+}
+
+.profile-section {
+    min-height: 100vh;
+    padding: 100px;
+    background: #111;
+    color: white;
+}
+{
+    scroll-behavior: smooth; /* เลื่อนแบบลื่น */
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ffcc33;
+    color: #000;
+    font-size: 22px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+}
+html {
+    scroll-behavior: smooth;
+}

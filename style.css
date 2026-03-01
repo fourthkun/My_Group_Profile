@@ -318,22 +318,8 @@ img {
     height: auto;
     display: block;
 }
-@media (max-width: 1024px) {
-    .member-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (max-width: 600px) {
-    .member-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .member-card {
-        width: 100%;
-        height: 220px;
-    }
-}
 
 
 

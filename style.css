@@ -47,7 +47,11 @@ nav a {
     align-items: stretch;  /* เปลี่ยนจาก center เป็น stretch */
     color: white;
 
-h1 { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+h1 {    
+    font-size: 3rem;
+    margin-bottom: 40px;  /* เพิ่มจาก 20px เป็น 40px */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
+   }
 
 /* การจัดช่องสมาชิก */
 .member-grid {
@@ -318,6 +322,7 @@ img {
     height: auto;
     display: block;
 }
+
 
 
 

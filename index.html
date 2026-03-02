@@ -2,160 +2,263 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก - โปรไฟล์กลุ่ม</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>My Pace - โปรไฟล์กลุ่ม</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
-
+    <!-- Hero Section -->
     <div class="hero">
         <div class="overlay">
             <header>
-                <img src="LOGO.png" alt="Group Logo" class="logo">
+                <img src="LOGO.png" alt="My Pace Logo" class="logo">
                 <nav>
-                    <a href="#">หน้าแรก</a>
+                    <a href="#" class="nav-link">หน้าแรก</a>
                 </nav>
             </header>
 
-            <div class="content">
-                <h1>My Pace</h1>
-                <p>เลือกสมาชิกเพื่อดูข้อมูลเพิ่มเติม</p>
+            <div class="hero-content">
+                <h1 class="hero-title">My Pace</h1>
+                <p class="hero-subtitle">เลือกสมาชิกเพื่อดูข้อมูลเพิ่มเติม</p>
                 
                 <div class="member-grid">
-                    <a href="#rung" class="member-card">
+                    <a href="#rung" class="member-card" data-member="1">
                         <div class="card-bg" style="background-image: url('รุ้ง.jpg');"></div>
-                        <span>สมาชิกคนที่ 1</span>
+                        <span class="member-name">รุ้ง</span>
                     </a>
-                    <a href="#sun" class="member-card">
+                    <a href="#sun" class="member-card" data-member="2">
                         <div class="card-bg" style="background-image: url('ซัน.jpg');"></div>
-                        <span>สมาชิกคนที่ 2</span>
+                        <span class="member-name">ซัน</span>
                     </a>
-                    <a href="#manao" class="member-card">
+                    <a href="#manao" class="member-card" data-member="3">
                         <div class="card-bg" style="background-image: url('มะนาว.jpg');"></div>
-                        <span>สมาชิกคนที่ 3</span>
+                        <span class="member-name">มะนาว</span>
                     </a>
-                    <a href="#fourth" class="member-card">
+                    <a href="#fourth" class="member-card" data-member="4">
                         <div class="card-bg" style="background-image: url('โฟร์ท.jpg');"></div>
-                        <span>สมาชิกคนที่ 4</span>
+                        <span class="member-name">โฟร์ท</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="rung" class="char-page theme-rung">
-        <div class="container">
-            <div class="content-left">
-                <div class="tag-new">สมาชิกคนที่ 1</div>
-                <h1 class="name-en">รุ้ง</h1>
+    <!-- Member Sections -->
+    <section id="rung" class="member-section theme-rung">
+        <div class="section-container">
+            <div class="member-info">
+                <span class="member-tag">สมาชิกคนที่ 1</span>
+                <h2 class="member-title">รุ้ง</h2>
+                
+                <div class="info-card">
+                    <div class="info-row">
+                        <span class="info-label">ชื่อ-นามสกุล:</span>
+                        <span class="info-value">นางสาววราลี กฤตกัณฐมณี</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เลขที่:</span>
+                        <span class="info-value">10</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">สาขา:</span>
+                        <span class="info-value">Bcom</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">ชั้นปี:</span>
+                        <span class="info-value">4</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เกรดสะสม:</span>
+                        <span class="info-value grade">3.85</span>
+                    </div>
+                </div>
 
-                <div class="detail-box">
-                    <p><strong>ชื่อ-นามสกุล:</strong> นางสาววราลี กฤตกัณฐมณี</p>
-                    <p><strong>เลขที่:</strong> 10</p>
-                    <p><strong>สาขา:</strong> Bcom</p>
-                    <p><strong>ชั้นปี:</strong> 4</p>
-                    <p><strong>เกรดสะสม:</strong> 3.85</p>
+                <div class="member-nav">
+                    <a href="#rung" class="nav-thumb active">
+                        <img src="รุ้ง.jpg" alt="รุ้ง">
+                    </a>
+                    <a href="#sun" class="nav-thumb">
+                        <img src="ซัน.jpg" alt="ซัน">
+                    </a>
+                    <a href="#manao" class="nav-thumb">
+                        <img src="มะนาว.jpg" alt="มะนาว">
+                    </a>
+                    <a href="#fourth" class="nav-thumb">
+                        <img src="โฟร์ท.jpg" alt="โฟร์ท">
+                    </a>
                 </div>
-                <div class="char-nav">
-                    <a href="#rung"><img src="รุ้ง.jpg" class="face active"></a>
-                    <a href="#sun"><img src="ซัน.jpg" class="face"></a>
-                    <a href="#manao"><img src="มะนาว.jpg" class="face"></a>
-                    <a href="#fourth"><img src="โฟร์ท.jpg" class="face"></a>
-                </div>
-                <a href="#top" class="btn-back">กลับหน้าแรก</a>
+
+                <a href="#top" class="back-btn">กลับหน้าแรก</a>
             </div>
 
-            <div class="content-right">
-                <img src="รุ้ง.jpg" alt="รุ้ง" class="main-char-img">
-            </div>
-        </div>
-    </section>
-
-    <section id="sun" class="char-page theme-sun">
-        <div class="container">
-            <div class="content-left">
-                <div class="tag-new">สมาชิกคนที่ 2</div>
-                <h1 class="name-en">ซัน</h1>
-
-                <div class="detail-box">
-                    <p><strong>ชื่อ-นามสกุล:</strong> นายวรกร ชุมพงศ์</p>
-                    <p><strong>เลขที่:</strong> 14</p>
-                    <p><strong>สาขา:</strong> Bcom</p>
-                    <p><strong>ชั้นปี:</strong> 4</p>
-                    <p><strong>เกรดสะสม:</strong> 3.85</p>
-                </div>
-                <div class="char-nav">
-                    <a href="#rung"><img src="รุ้ง.jpg" class="face"></a>
-                    <a href="#sun"><img src="ซัน.jpg" class="face active"></a>
-                    <a href="#manao"><img src="มะนาว.jpg" class="face"></a>
-                    <a href="#fourth"><img src="โฟร์ท.jpg" class="face"></a>
-                </div>
-                <a href="#top" class="btn-back">กลับหน้าแรก</a>
-            </div>
-
-            <div class="content-right">
-                <img src="ซัน1.jpg" alt="ซัน" class="main-char-img">
+            <div class="member-image">
+                <img src="รุ้ง.jpg" alt="รุ้ง" class="profile-image">
             </div>
         </div>
     </section>
 
-    <section id="manao" class="char-page theme-manao">
-        <div class="container">
-            <div class="content-left">
-                <div class="tag-new">สมาชิกคนที่ 3</div>
-                <h1 class="name-en">มะนาว</h1>
+    <section id="sun" class="member-section theme-sun">
+        <div class="section-container">
+            <div class="member-info">
+                <span class="member-tag">สมาชิกคนที่ 2</span>
+                <h2 class="member-title">ซัน</h2>
+                
+                <div class="info-card">
+                    <div class="info-row">
+                        <span class="info-label">ชื่อ-นามสกุล:</span>
+                        <span class="info-value">นายวรกร ชุมพงศ์</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เลขที่:</span>
+                        <span class="info-value">14</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">สาขา:</span>
+                        <span class="info-value">Bcom</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">ชั้นปี:</span>
+                        <span class="info-value">4</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เกรดสะสม:</span>
+                        <span class="info-value grade">3.85</span>
+                    </div>
+                </div>
 
-                <div class="detail-box">
-                    <p><strong>ชื่อ-นามสกุล:</strong> นางสาวกัลยกร พันธ์สระน้อย</p>
-                    <p><strong>เลขที่:</strong> 16</p>
-                    <p><strong>สาขา:</strong> Bcom</p>
-                    <p><strong>ชั้นปี:</strong> 4</p>
-                    <p><strong>เกรดสะสม:</strong> 3.85</p>
+                <div class="member-nav">
+                    <a href="#rung" class="nav-thumb">
+                        <img src="รุ้ง.jpg" alt="รุ้ง">
+                    </a>
+                    <a href="#sun" class="nav-thumb active">
+                        <img src="ซัน.jpg" alt="ซัน">
+                    </a>
+                    <a href="#manao" class="nav-thumb">
+                        <img src="มะนาว.jpg" alt="มะนาว">
+                    </a>
+                    <a href="#fourth" class="nav-thumb">
+                        <img src="โฟร์ท.jpg" alt="โฟร์ท">
+                    </a>
                 </div>
-                <div class="char-nav">
-                    <a href="#rung"><img src="รุ้ง.jpg" class="face"></a>
-                    <a href="#sun"><img src="ซัน.jpg" class="face"></a>
-                    <a href="#manao"><img src="มะนาว.jpg" class="face active"></a>
-                    <a href="#fourth"><img src="โฟร์ท.jpg" class="face"></a>
-                </div>
-                <a href="#top" class="btn-back">กลับหน้าแรก</a>
+
+                <a href="#top" class="back-btn">กลับหน้าแรก</a>
             </div>
 
-            <div class="content-right">
-                <img src="มะนาว.jpg" alt="มะนาว" class="main-char-img">
-            </div>
-        </div>
-    </section>
-
-    <section id="fourth" class="char-page theme-fourth">
-        <div class="container">
-            <div class="content-left">
-                <div class="tag-new">สมาชิกคนที่ 4</div>
-                <h1 class="name-en">โฟร์ท</h1>
-
-                <div class="detail-box">
-                    <p><strong>ชื่อ-นามสกุล:</strong> นายพิชญพงษ์ ปิ่นทอง</p>
-                    <p><strong>เลขที่:</strong> 25</p>
-                    <p><strong>สาขา:</strong> Bcom</p>
-                    <p><strong>ชั้นปี:</strong> 4</p>
-                    <p><strong>เกรดสะสม:</strong> 2.48</p>
-                </div>
-                <div class="char-nav">
-                    <a href="#rung"><img src="รุ้ง.jpg" class="face"></a>
-                    <a href="#sun"><img src="ซัน.jpg" class="face"></a>
-                    <a href="#manao"><img src="มะนาว.jpg" class="face"></a>
-                    <a href="#fourth"><img src="โฟร์ท.jpg" class="face active"></a>
-                </div>
-                <a href="#top" class="btn-back">กลับหน้าแรก</a>
-            </div>
-
-            <div class="content-right">
-                <img src="โฟร์ท.jpg" alt="โฟร์ท" class="main-char-img">
+            <div class="member-image">
+                <img src="ซัน1.jpg" alt="ซัน" class="profile-image">
             </div>
         </div>
     </section>
 
-    <a href="#top" class="back-to-top">↑</a>
+    <section id="manao" class="member-section theme-manao">
+        <div class="section-container">
+            <div class="member-info">
+                <span class="member-tag">สมาชิกคนที่ 3</span>
+                <h2 class="member-title">มะนาว</h2>
+                
+                <div class="info-card">
+                    <div class="info-row">
+                        <span class="info-label">ชื่อ-นามสกุล:</span>
+                        <span class="info-value">นางสาวกัลยกร พันธ์สระน้อย</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เลขที่:</span>
+                        <span class="info-value">16</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">สาขา:</span>
+                        <span class="info-value">Bcom</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">ชั้นปี:</span>
+                        <span class="info-value">4</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เกรดสะสม:</span>
+                        <span class="info-value grade">3.85</span>
+                    </div>
+                </div>
 
+                <div class="member-nav">
+                    <a href="#rung" class="nav-thumb">
+                        <img src="รุ้ง.jpg" alt="รุ้ง">
+                    </a>
+                    <a href="#sun" class="nav-thumb">
+                        <img src="ซัน.jpg" alt="ซัน">
+                    </a>
+                    <a href="#manao" class="nav-thumb active">
+                        <img src="มะนาว.jpg" alt="มะนาว">
+                    </a>
+                    <a href="#fourth" class="nav-thumb">
+                        <img src="โฟร์ท.jpg" alt="โฟร์ท">
+                    </a>
+                </div>
+
+                <a href="#top" class="back-btn">กลับหน้าแรก</a>
+            </div>
+
+            <div class="member-image">
+                <img src="มะนาว.jpg" alt="มะนาว" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="fourth" class="member-section theme-fourth">
+        <div class="section-container">
+            <div class="member-info">
+                <span class="member-tag">สมาชิกคนที่ 4</span>
+                <h2 class="member-title">โฟร์ท</h2>
+                
+                <div class="info-card">
+                    <div class="info-row">
+                        <span class="info-label">ชื่อ-นามสกุล:</span>
+                        <span class="info-value">นายพิชญพงษ์ ปิ่นทอง</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เลขที่:</span>
+                        <span class="info-value">25</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">สาขา:</span>
+                        <span class="info-value">Bcom</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">ชั้นปี:</span>
+                        <span class="info-value">4</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">เกรดสะสม:</span>
+                        <span class="info-value grade">2.48</span>
+                    </div>
+                </div>
+
+                <div class="member-nav">
+                    <a href="#rung" class="nav-thumb">
+                        <img src="รุ้ง.jpg" alt="รุ้ง">
+                    </a>
+                    <a href="#sun" class="nav-thumb">
+                        <img src="ซัน.jpg" alt="ซัน">
+                    </a>
+                    <a href="#manao" class="nav-thumb">
+                        <img src="มะนาว.jpg" alt="มะนาว">
+                    </a>
+                    <a href="#fourth" class="nav-thumb active">
+                        <img src="โฟร์ท.jpg" alt="โฟร์ท">
+                    </a>
+                </div>
+
+                <a href="#top" class="back-btn">กลับหน้าแรก</a>
+            </div>
+
+            <div class="member-image">
+                <img src="โฟร์ท.jpg" alt="โฟร์ท" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <a href="#top" class="scroll-top">↑</a>
 </body>
 </html>

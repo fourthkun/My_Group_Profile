@@ -42,7 +42,7 @@ img {
 /* ===== HERO SECTION ===== */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
+    background: url('100909.jpg') no-repeat center center/cover;
     position: relative;
 }
 
@@ -636,3 +636,4 @@ header {
         scroll-behavior: auto !important;
     }
 }
+

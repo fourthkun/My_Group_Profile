@@ -196,15 +196,15 @@ header {
 }
 
 .theme-sun {
-    background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%);
-}
-
-.theme-manao {
     background: linear-gradient(135deg, #444443 0%, #000000 100% );
 }
 
+.theme-manao {
+    background: linear-gradient(135deg, #985495 0%, #8e2191 100%);
+}
+
 .theme-fourth {
-    background: linear-gradient(135deg,#2c3e50 0%, #3498db 100%);
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
 }
 
 .section-container {
@@ -636,5 +636,6 @@ header {
         scroll-behavior: auto !important;
     }
 }
+
 
 
